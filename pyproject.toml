@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-integrity-checker"
+version = "0.3.0"
+description = "Calculate bounded SHA-256 and SHA-512 digests for a local regular file."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Oscar Opemba" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+Repository = "https://github.com/Oscar-Opemba/file-integrity-checker"
+Issues = "https://github.com/Oscar-Opemba/file-integrity-checker/issues"
+
+[project.scripts]
+file-integrity-checker = "app:main"
+
+[tool.setuptools]
+py-modules = ["app", "common", "security_utils"]

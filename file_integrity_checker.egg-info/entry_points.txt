@@ -1,0 +1,2 @@
+[console_scripts]
+file-integrity-checker = app:main
